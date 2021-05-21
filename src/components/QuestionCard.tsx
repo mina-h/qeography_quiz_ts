@@ -7,7 +7,17 @@ type Properties = {
 }
 const QuestionCard:React.FC <Properties>= (prpps) => {
   return (
-    <p>Question</p>
+    <div>
+      <p>Question</p>
+      <div>
+        {prpps.questions.map((element, index) => {
+          <div key={index}>
+          <button >{element.question}</button>
+          </div>
+        })}
+      </div>
+    </div>
+    
   )
 }
 
