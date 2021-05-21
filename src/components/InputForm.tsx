@@ -20,11 +20,11 @@ const InputForm:React.FC<Properties> = (props) => {
     props.startQuiz(continent);
   }
 
-  const startQuiz = async() => {
-    console.log(continent);
-    const data = await sendContinentAndGetQuestions(continent);
-    console.log(data);
-  }
+  // const startQuiz = async() => {
+  //   console.log(continent);
+  //   const data = await sendContinentAndGetQuestions(continent);
+  //   console.log(data);
+  // }
 
 
   return (

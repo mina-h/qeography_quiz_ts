@@ -26,7 +26,7 @@ const App = () => {
   return (
     <div className="App">
       <InputForm startQuiz={startQuiz}/>
-      <QuestionCard question={questions}/>
+      <QuestionCard questions={questions}/>
     </div>
   );
 }
