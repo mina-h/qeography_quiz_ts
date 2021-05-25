@@ -3,3 +3,4 @@ export type Question = {
   options: string[],
   currectAnswer: string,
 }
+

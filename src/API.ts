@@ -14,5 +14,6 @@ export const sendContinentAndGetQuestions = async(continentName: string) => {
 
   // string converts to obj with .json()
   const data = await response.json();
+  // console.log(data);
   return data;  
 }

@@ -3,21 +3,19 @@ import { Question } from '../utils';
 
 
 type Properties = {
-  questions: Question[];
+  questions: Question;
 }
-const QuestionCard:React.FC <Properties>= (prpps) => {
+const QuestionCard:React.FC <Properties>= ({questions}) => {
+  
   return (
-    <div>
-      <p>Question</p>
       <div>
-        {prpps.questions.map((element, index) => {
-          <div key={index}>
-          <button >{element.question}</button>
-          </div>
-        })}
+          <p>{questions.question}</p>
+          {questions.options.map((element, index) => {
+            return <div key={index}>
+             <button>{element}</button>
+            </div>
+          })}
       </div>
-    </div>
-    
   )
 }
 

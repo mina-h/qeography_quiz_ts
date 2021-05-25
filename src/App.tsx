@@ -15,18 +15,27 @@ import { Question } from './utils';
 
 const App = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
+  const [number, setNumber] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [gameOn, setGameOn] = useState(false);
 
   const startQuiz = async (continent: string) => {
-    console.log(continent);
+    // console.log(continent);
+    setLoading(true);
     const data = await sendContinentAndGetQuestions(continent);
+    console.log(data);
     setQuestions(data);
+    setLoading(false);
+    setGameOn(true);
+    // console.log(questions);
   }
 
 
   return (
     <div className="App">
       <InputForm startQuiz={startQuiz}/>
-      <QuestionCard questions={questions}/>
+      {loading && <p>loading...</p>}
+      {!loading && gameOn && <QuestionCard questions={questions[number]}/>}
     </div>
   );
 }
