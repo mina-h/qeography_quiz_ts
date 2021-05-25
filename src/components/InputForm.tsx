@@ -22,10 +22,10 @@ const InputForm:React.FC<Properties> = (props) => {
 
 
   return (
-    <form >
-      <label>Write Continet</label>
+    <form className="input">
+      <label className="input__label">Write Continet</label>
       <input type="text" value={continent} onChange={handleInputChange}></input>
-      <button type="button" onClick={sendDataToApp}>StartQuiz</button>
+      <button className="input__button" type="button" onClick={sendDataToApp}>StartQuiz</button>
     </form>
   )
 }
