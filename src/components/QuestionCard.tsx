@@ -12,7 +12,7 @@ const QuestionCard:React.FC <Properties>= ({questions, setPoints, disable}) => {
   
   
   return (
-      <div>
+      <div className="questionCard">
           <p>{questions.question}</p>
           {questions.options.map((element, index) => {
             return <div key={index}>

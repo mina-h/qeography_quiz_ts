@@ -67,12 +67,13 @@ const App = () => {
   return (
     <div className="App">
       {start && <InputForm startQuiz={startQuiz}/>}
-      {loading && <p>loading...</p>}
+      {loading && <p className="loading">loading...</p>}
       {!loading && gameOn && <QuestionCard questions={questions[number - 1]} setPoints={checkAnswerAndSetPoints}
         disable={disableButton}/>}
-      {gameOn && !gameOver && <div>
+      {gameOn && !gameOver && 
+      <div className="footer">
         <p>points: {points}</p>
-        <button onClick={nextQuestion}>Next Question</button>
+        <button className="next" onClick={nextQuestion}>Next Question</button>
         </div>}
       {gameOver && start && !gameOn && <p>Game Over, points: {points}</p>}
     </div>
