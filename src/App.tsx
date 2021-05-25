@@ -72,7 +72,7 @@ const App = () => {
         disable={disableButton}/>}
       {gameOn && !gameOver && 
       <div className="footer">
-        <p>points: {points}</p>
+        <p className="points">points: {points}</p>
         <button className="next" onClick={nextQuestion}>Next Question</button>
         </div>}
       {gameOver && start && !gameOn && <p>Game Over, points: {points}</p>}

@@ -24,8 +24,8 @@ const InputForm:React.FC<Properties> = (props) => {
   return (
     <form className="input">
       <label className="input__label">Write Continet</label>
-      <input type="text" value={continent} onChange={handleInputChange}></input>
-      <button className="input__button" type="button" onClick={sendDataToApp}>StartQuiz</button>
+      <input className="input__text" type="text" value={continent} onChange={handleInputChange}></input>
+      <button className="input__button" type="button" onClick={sendDataToApp}>Start Quiz</button>
     </form>
   )
 }

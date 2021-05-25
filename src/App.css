@@ -5,9 +5,14 @@
 }
 
 .input {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.input__text {
+  padding: .5rem;
 }
 
 .input__label {
@@ -16,6 +21,8 @@
 
 .input__button {
    margin: 1rem;
+   width: 10rem;
+   padding: .5rem;
 }
 
 .loading {
@@ -23,6 +30,8 @@
 }
 
 .questionCard {
+  margin-top: 2rem;
+  padding: .5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,5 +43,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
+  margin-top: 1rem;
+  padding: .5rem;
 }
+
+.points {
+  padding: .5rem;
+}
+.next {
+  padding: .5rem;
+}
+.question {
+  padding: 1rem;
+}
+.options {
+  padding: .5rem;
+  width: 10rem;
+}
+
+
