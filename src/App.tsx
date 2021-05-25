@@ -75,7 +75,7 @@ const App = () => {
         <p className="points">points: {points}</p>
         <button className="next" onClick={nextQuestion}>Next Question</button>
         </div>}
-      {gameOver && start && !gameOn && <p>Game Over, points: {points}</p>}
+      {gameOver && start && !gameOn && <p className="gameover">Game Over, points: {points}</p>}
     </div>
   );
 }

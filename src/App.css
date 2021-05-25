@@ -25,7 +25,7 @@
    padding: .5rem;
 }
 
-.loading {
+.loading, .gameover {
   text-align: center;
 }
 
